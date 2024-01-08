@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriganesh Choudhary </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e076ece83.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!--To add text-->
+        <div class="header-text">
+            <p></p>
+            <h1>Shriganesh <br> <span>Choudhary</span></h1>
+        </div>   
+    </div>
+   </div> 
+   <!---------------------about------------------------------->
+   <div id="about">
+    <div class="container"><!--create 2 columns-->
+        <div class="row">
+            <div class="about-col-1"><!--left column image,ridht column text-->
+                <img src="images/Photo.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Web Development is the Technology i am doing.Creating websites or Webpages which are user friendly.Designing user interfaces (UI) that are intuitive and visually appealing.
+                    I also craft user experiences (UX) that are smooth, efficient, and enjoyable.
+                    Also i optimize websites for different devices, from desktops to smartphones.</p>
+
+
+                    <!--We will make 3 tabs in these-->
+                    <div class="tab-titles"><!--There will be 3 titles in this-->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-titles"><!--There will be 3 titles in this-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>C++</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                                                        
+                        </ul>
+                    </div>
+                    <!--Adding contents of Experience and education tab-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-June</span><br>Front-end Developer at Coding Raja Technologies</li>
+                                                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2012-2019</span><br>Secondary School - Nehru Montessori Senior Secondary School</li>
+                            <li><span>2019-2021</span><br>Higher Secondary SchoolNehru Montessori Senior Secondary School</li>
+                            <li><span>2021-2025</span><br>SKN Sinhgad Institute of Technology and Science</li>                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+
+   <!-----------------------services--------------------->
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #181717;"></i>
+                <h2>Web Design</h2>
+                <p> Create beautiful and compelling videos, images and HTML5 ads. Using animation and interactive elements to build out your creative vision, then scale your content for different sizes or audiences with responsive and dynamic workflows.t</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>User-friendly interfaces for digital products that are meant to be used by the People Services.
+                    Also providing meaningful user experiences for customers. 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+   </div>
+   <!-- ---------  portfolio--------------------->
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list"><!--Arrange this images as a grid-->
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Meadia App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from the Play store.</p>
+                        <!-- in link,no text, only icon-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from the Play store.</p>
+                        <!-- in link,no text, only icon-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world.
+                        Download it from the Play store.</p>
+                        <!-- in link,no text, only icon-->
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--------------contact---------------------->
+<div id="contact">
+    <div class="container"><!--adding  2 columns-->
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shriganesh190@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 7341638493</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf.pdf" download class="btn btn2">Download Cv</a><!--btn2 created so that btn can be left align-->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-heart"></i> by  @Shriganesh</p>
+    </div>
+</div>
+
+
+   <script>
+     
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+   </script>
+
+   <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){/*whenever we click on menu bar ie will call this function called openmenu() and in this it will refer to sidemenu*/
+            sidemenu.style.right = "0";/*whenever right will be 0,it will be zero*/
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzP0CwmevmTttOY-v3e1SZc_oleZzYZsVpiOsetvvJ88YJm9DdQO9_m7jPyTAH_-a8BmA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Form Submission Done"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)/*After 5 sec message will be Removed*/
+            form.reset()/*Reset the Input field in the form*/
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
